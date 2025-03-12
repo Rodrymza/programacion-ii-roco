@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrantes de la banda</title>
+</head>
+<body>
+    <h1>Integrantes de la banda</h1>
+    <ul>
+        <li>Lars Ullrich</li>
+        <li>James Hetfield</li>
+        <li>Kirk Hammett</li>
+        <li>Robert Trujillo</li>
+    </ul>
+    <h2>Envia un mensaje a la banda!</h2>
+    <form action="/submit_message" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <br>
+    <a href="index.html">Volver al inicio</a>
+</body>
+</html>
