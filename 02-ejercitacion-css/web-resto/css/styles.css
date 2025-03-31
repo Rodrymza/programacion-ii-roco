@@ -1,12 +1,12 @@
 .section-menu {
     background-color: antiquewhite;
     height: 100px;
-    width: auto;
+    width: 60%;
     border-radius: 30px;
     padding: 20px;
     margin: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content:  flex-start;
     align-items: center;
     position: relative; /* Añadir posición relativa */
 }
@@ -26,6 +26,7 @@
     height: 100%; /* Ajusta la altura de la imagen al tamaño del div */
     width: auto; /* Mantiene la proporción de la imagen */
     object-fit: cover; /* Asegura que la imagen cubra el área del div */
+    
 }
 
 body {
@@ -45,8 +46,73 @@ footer{
     bottom: 0;
 }
 .header-title {
-    background-color:burlywood; /* Color de fondo llamativo */
+    background-color:rgba(222, 184, 135, 0.8); /* Color de fondo llamativo */
     padding: 15px;
     border-radius: 20px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
 }
+.navbar {
+    background-color:burlywood;
+    margin: 5px;
+}
+#back-btn{
+    position:fixed;
+    bottom: 60px;
+    right: 10px;
+    z-index: 10;
+}
+#up-btn {
+    position:fixed;
+    bottom: 60px;
+    left: 10px;
+    z-index: 10;
+}
+section {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    flex-wrap: wrap
+}
+.table-container {
+    width:70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    #back-btn {
+        bottom: 83px;  /* Cambia el valor de bottom para pantallas pequeñas */
+        right: 5px;
+    }
+    #up-btn {
+        bottom: 83px;
+        left: 5px;
+    }
+    .section-menu {
+        width: 100%;
+    }
+    .table-container {
+        width: 100%;
+    }
+}
+.tarjeta-horarios {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para que ocupe toda la altura de la pantalla */
+    margin: 0; /* Elimina el margen por defecto del body */
+}
+.contenedor-horarios {
+      background-color: rgba(51, 51, 51, 0.5);
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto; /* Centrado automático en flexbox */
+    border-radius: 20px;
+
+    border: 3px solid #ffcc00cf; /* Borde dorado */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Sombra suave */
+}
+
+

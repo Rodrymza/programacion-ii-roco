@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header-title">
+      <h1 id="arriba"
+        class="text-center text-light my-4"
+        style="font-family: 'Franklin Gothic Medium'"
+      >
+        Nuestro Menú
+      </h1>
+    </header>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: burlywood"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">🍽️ Menú</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#entradas">Entradas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#principales">Principales</a></li>
+            <li class="nav-item"><a class="nav-link" href="#bebidas">Bebidas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#postres">Postres</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cocteleria">Coctelería</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cafeteria">Cafetería</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="entradas" class="menu-section">
+      <h2 class="text-center text-light bg-warning p-3 rounded shadow-sm" style="width: 80%;">Entradas</h2>
+      <div class="table-container">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Plato</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Ensalada César</td><td>$8.99</td></tr>
+            <tr><td>Calamares Fritos</td><td>$10.99</td></tr>
+            <tr><td>Bruschetta Italiana</td><td>$7.49</td></tr>
+            <tr><td>Carpaccio de Res</td><td>$12.99</td></tr>
+            <tr><td>Provoleta al Horno</td><td>$9.99</td></tr>
+            <tr><td>Empanadas Criollas</td><td>$5.99</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="principales" class="menu-section">
+      <h2 class="text-center text-light bg-warning p-3 rounded shadow-sm" style="width: 80%;">Principales</h2>
+      <div class="table-container">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Plato</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Filete de Res</td><td>$18.99</td></tr>
+            <tr><td>Pasta Alfredo</td><td>$14.99</td></tr>
+            <tr><td>Pollo a la Mostaza</td><td>$13.99</td></tr>
+            <tr><td>Risotto de Mariscos</td><td>$16.99</td></tr>
+            <tr><td>Pizza Napolitana</td><td>$11.99</td></tr>
+            <tr><td>Milanesa Completa</td><td>$12.49</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="bebidas" class="menu-section">
+      <h2 class="text-center text-light bg-warning p-3 rounded shadow-sm" style="width: 80%;">Bebidas</h2>
+      <div class="table-container">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Bebida</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Agua Mineral</td><td>$2.99</td></tr>
+            <tr><td>Jugo Natural</td><td>$3.49</td></tr>
+            <tr><td>Refresco</td><td>$2.49</td></tr>
+            <tr><td>Cerveza Artesanal</td><td>$5.99</td></tr>
+            <tr><td>Vino Tinto</td><td>$6.99</td></tr>
+            <tr><td>Soda Italiana</td><td>$3.99</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="postres" class="menu-section">
+        <h2 class="text-center text-light bg-warning p-3 rounded shadow-sm" style="width: 80%;">Postres</h2>
+        <div class="table-container">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Bebida</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Helado</td><td>$2.99</td></tr>
+              <tr><td>Flan Casero</td><td>$3.49</td></tr>
+              <tr><td>Cheescake</td><td>$2.49</td></tr>
+              <tr><td>Volcan de chocolate</td><td>$5.99</td></tr>
+              <tr><td>Rogel</td><td>$6.99</td></tr>
+              <tr><td>Panqueques</td><td>$3.99</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="cocteleria" class="menu-section">
+        <h2 class="text-center text-light bg-warning p-3 rounded shadow-sm" style="width: 80%;">Cocteleria</h2>
+        <div class="table-container">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Bebida</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Helado</td><td>$2.99</td></tr>
+              <tr><td>Flan Casero</td><td>$3.49</td></tr>
+              <tr><td>Cheescake</td><td>$2.49</td></tr>
+              <tr><td>Volcan de chocolate</td><td>$5.99</td></tr>
+              <tr><td>Rogel</td><td>$6.99</td></tr>
+              <tr><td>Panqueques</td><td>$3.99</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="cafeteria" class="menu-section">
+        <h2 class="text-center text-light bg-warning p-3 rounded shadow-sm" style="width: 80%;">Cafeteria</h2>
+        <div class="table-container">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Bebida</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Helado</td><td>$2.99</td></tr>
+              <tr><td>Flan Casero</td><td>$3.49</td></tr>
+              <tr><td>Cheescake</td><td>$2.49</td></tr>
+              <tr><td>Volcan de chocolate</td><td>$5.99</td></tr>
+              <tr><td>Rogel</td><td>$6.99</td></tr>
+              <tr><td>Panqueques</td><td>$3.99</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    <a href="#arriba" class="btn btn-primary" id="up-btn">Volver Arriba</a>
+
+    <a href="index.html" class="btn btn-primary" id="back-btn">Página Principal</a>
+
+    <footer>
+      © 2025 Restaurante Delicioso. Todos los derechos reservados.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
