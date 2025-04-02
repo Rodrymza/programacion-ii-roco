@@ -1,0 +1,7 @@
+#contenedor-tareas {
+    height: 75vh;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    max-height: 75vh;
+
+}

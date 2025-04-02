@@ -1,0 +1,11 @@
+#notaDetalle {
+    width: 100%;  /* Hace que el textarea ocupe todo el ancho disponible */
+    height: 100%; /* Hace que el textarea ocupe todo el alto del modal-body */
+    resize: none; /* Evita que el usuario cambie el tamaño del textarea */
+}
+.btn-agregar{
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}

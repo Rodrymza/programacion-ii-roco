@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autorización Obras Sociales</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo" class="bg-info text-white p-3 text-center">Gestión de Obras Sociales</h1>
+
+        <!-- Barra de búsqueda centrada -->
+        <div class="barra-busqueda-contenedor d-flex justify-content-center mb-3">
+            <div class="col-md-8 col-lg-6 mx-auto d-flex">
+                <input type="text" id="buscador" class="form-control me-2" placeholder="Buscar...">
+                <button id="btn-buscar" class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+
+        <!-- Lista de obras sociales -->
+        <div id="contenedor-lista" class="container">
+            <ul id="lista-obras-sociales" class="list-group">
+                <li class="list-group-item d-flex justify-content-center align-items-center">
+                    <!-- Aquí he reemplazado el enlace por un botón -->
+                    <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#detalleModal" onclick="mostrarDetalle('Obra Social 1')">Obra Social 1</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#detalleModal" onclick="mostrarDetalle('Obra Social 2')">Obra Social 2</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#detalleModal" onclick="mostrarDetalle('Obra Social 3')">Obra Social 3</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn btn-link text-decoration-none" data-bs-toggle="modal" data-bs-target="#detalleModal" onclick="mostrarDetalle('Obra Social 4')">Obra Social 4</button>
+                </li>
+            </ul>
+        </div>
+
+        <button class="btn btn-secondary btn-agregar" data-bs-toggle="modal" data-bs-target="#detalleModal">
+            Agregar Obra Social
+        </button>
+        
+        <!-- Modal para mostrar y editar los detalles -->
+        <div class="modal fade" id="detalleModal" tabindex="-1" aria-labelledby="detalleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="detalleModalLabel">Detalles de la Obra Social</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Textarea que será editable cuando se presione "Editar" -->
+                        <textarea id="notaDetalle" class="form-control" rows="10" readonly></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- Botón de editar que habilita el textarea para ser modificado -->
+                        <button type="button" id="editarBtn" class="btn btn-warning" onclick="habilitarEdicion()">Editar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" onclick="guardarDetalles()">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
